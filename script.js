@@ -3,7 +3,7 @@ let dat = {
 	nomber1: [],
 	nomber2: [],
 	nomber3: [],
-    };
+};
 
 for(let i = 0; i <= 9; i++) {
 	dat.data[i] = new Date(2020, 11, 30 - i).toLocaleString();
