@@ -57,9 +57,11 @@ function startTable() {
 };
 
 function startChart() {
+	a = dat.data;
+	b = dat.nomber1;
 	diagram = new Dygraph(
 		document.getElementById("chart"),
-		[dat.data.toISOString().substr(0,10), dat.nomber1]
+		[a, b]
 	);
 };
 
