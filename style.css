@@ -1,0 +1,49 @@
+.blockBase {
+    box-sizing: border-box;
+    width: 1700px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list {
+	background: #ccd;
+	width: 210px;
+	text-align: center;
+	border-radius: 6px;
+	vertical-align: top;
+	padding: 5px;
+    padding-right: 20px;
+    border: solid 3px black;
+    float: left;
+    font: 12pt TimesNewRoman;
+}
+
+.table {
+	background: #acf;
+	width: 700px;
+	text-align: center;
+	border-radius: 6px;
+	vertical-align: top;
+	padding: 5px;
+    padding-right: 20px;
+    border: solid 3px black; 
+    float: left;
+}
+
+.chart {
+	background: #bca;
+	width: 600px;
+	text-align: center;
+	border-radius: 6px;
+	vertical-align: top;
+	padding: 5px;
+    padding-right: 20px;
+    border: solid 3px black; 
+    float: left;
+}
+
+
+
+
+
