@@ -5,8 +5,11 @@ let dat = {
 	nomber3: [],
 };
 
+result = [];
+
+
 for(let i = 0; i <= 9; i++) {
-	dat.data[i] = new Date(2020, 11, 30 - i).toLocaleString();
+	dat.data[i] = new Date(2020, 11, 30 - i).toLocaleDateString("en-GB"); // дата в формате дд/ии/гггг
 	dat.nomber1[i] = getRandomArbitary(0, 100);
 	dat.nomber2[i] = getRandomArbitary(0, 100);
 	dat.nomber3[i] = getRandomArbitary(0, 100);
@@ -15,6 +18,11 @@ for(let i = 0; i <= 9; i++) {
 function getRandomArbitary(min, max){
 	return Math.floor(min + Math.random() * (max + 1 - min));
 };
+
+// заполнение 2D массива result[] данными из dat.data[] и dat.nomber1[]
+for ( var i = 0; i < dat.data.length; i++ ) {
+  result.push( [ dat.data[i].toString(), parseInt(dat.nomber1[i], 10) ] );
+}
 
 function startList() {
 	let app = "String ";
@@ -57,11 +65,10 @@ function startTable() {
 };
 
 function startChart() {
-	a = dat.data;
-	b = dat.nomber1;
+	newArr = [["May 1"][1], ["May 2"],[3], ["May 3"], [2]];
 	diagram = new Dygraph(
 		document.getElementById("chart"),
-		[a, b]
+		result // 2D массив
 	);
 };
 
