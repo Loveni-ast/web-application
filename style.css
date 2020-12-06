@@ -61,6 +61,7 @@ body {
 	border-radius: 6px;
 	border: solid 3px black;
 	font: 12pt TimesNewRoman;
+	overflow: scroll;
 }
 
 .table {
@@ -69,7 +70,8 @@ body {
 	height: 700px;
 	text-align: center;
 	border-radius: 6px;
-	border: solid 3px black; 
+	border: solid 3px black;
+	overflow:scroll;	
 }
 
 .chart {
