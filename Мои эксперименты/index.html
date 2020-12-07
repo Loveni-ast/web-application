@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">   
+	<link rel="stylesheet" href="style.css"/>
+	<script src="dygraph/dygraph-combined.js"></script>
+	<script src="script.js"></script> 
+</head>
+<body>
+	<div class="blockBase">
+			<a id="link" href="#">Ссылка 1</a>
+			<a id="link" href="#">Ссылка 2</a>
+			<a id="link" href="#">Ссылка 3</a>
+			<a id="link" href="#">Ссылка 4</a>
+			<a id="link" href="#">Ссылка 5</a>
+			<a id="link" href="#">Ссылка 6</a>
+			<a id="link" href="#">Ссылка 7</a>
+			<a id="link" href="#">Ссылка 8</a>
+
+		<div id="date-div">	
+			<p>Период с <input type="date" id="dateStart" name="join_date"> по <input type="date" id="dateFinish" name="join_date"> </p>
+		</div>
+
+		<div id="content">
+			<div class="list">
+			</div>
+
+       		<div class="table">
+			</div>
+			
+			<div id="chart" class="chartBlok">
+			</div>
+		</div>
+	</div>
+    
+	<script>
+		startDate();
+		startList();
+		startTable();
+		startChart();
+	</script> 
+</body>
+</html>
