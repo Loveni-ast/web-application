@@ -33,6 +33,7 @@ body {
 .table {
 	background: #acf;
 	width: 700px;
+	height: 700px;
 	text-align: center;
 	border-radius: 6px;
 	vertical-align: top;
