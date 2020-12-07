@@ -4,7 +4,7 @@ let dat = {
 	nomber2: [],
 	nomber3: [],
     };
-    for(let i = 0; i <= 9; i++) {
+    for(let i = 0; i <= 99; i++) {
 	dat.data[i] = new Date(2020, 11, 30 - i).toISOString().substr(0,10);
 	dat.nomber1[i] = getRandomArbitary(0, 100);
 	dat.nomber2[i] = getRandomArbitary(0, 100);
@@ -19,7 +19,7 @@ function startList(){
 	let app = "String ";
     let arr = [];
 
-    for(let i = 0; i <= 4; i++) {
+    for(let i = 0; i <= 19; i++) {
 	    arr[i] = app + (i + 1);
     };
 
@@ -55,17 +55,6 @@ function startTable(){
     };
 };
 
-let mas1 = [];
-for (let i = 0; i <= 9; i++) {
-    mas1.push([i,dat.nomber1[i]]);
-};
-
-/*function startChart() {
-    diagram = new Dygraph(
-        document.getElementById("chartBlok"),
-        mas1
-    );
-};*/
 
 function startDate(){
     mdate2 = new Date();
@@ -78,7 +67,7 @@ function startChart(){
     document.querySelector('.chartBlok').innerHTML = `<div class="chart">  
     </div>`;
     mas = [];
-        for (let i = 0; i <= 9; i++) {
+        for (let i = 0; i <= 99; i++) {
             mas.push([i,dat.nomber1[i]]);
         };
     diagram1 = new Dygraph(
